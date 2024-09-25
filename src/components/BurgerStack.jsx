@@ -1,8 +1,11 @@
 import Ingredient from './Ingredient';
+import '../App.css';
 
 const BurgerStack = ({ stack, removeFromBurger }) => {
   return (
-    <ul>
+    <main>
+      <section>
+        <ul>
       {stack.length === 0 ? (
         <li>No Ingredients</li>
       ) : (
@@ -15,7 +18,9 @@ const BurgerStack = ({ stack, removeFromBurger }) => {
           />
         ))
       )}
-    </ul>
+      </ul>
+      </section>
+      </main>
   );
 };
 
